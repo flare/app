@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.signup  '/signup',  :controller => 'users', :action => 'new'
   
   map.root :controller => 'pages', :action => 'home'
+  
+  map.resources :users
 
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
